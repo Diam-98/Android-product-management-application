@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetilsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Les details du produit"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameOfProd"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/categoryOfProd"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceOfProduct"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionOfProd"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modifier"
+                android:layout_margin="20dp"
+                android:id="@+id/prodUpdateButton">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suprimer"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:id="@+id/prodDeleteButton">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
